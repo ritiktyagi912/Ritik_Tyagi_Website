@@ -1,196 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ritik Tyagi | Electrical VFD & Automation</title>
+<title>Ritik Tyagi | Electrical & Automation Engineer</title>
 
-  <meta name="description" content="Ritik Tyagi - Electrical, VFD and Automation services. Contact for electrical and VFD related work.">
+<meta name="description" content="Ritik Tyagi - Electrical, PLC, SCADA, VFD and Industrial Automation services.">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+  scroll-behavior:smooth;
+}
 
-    body {
-      background: #07111f;
-      color: white;
-      line-height: 1.6;
-    }
+body{
+  background:#06101d;
+  color:white;
+  line-height:1.6;
+}
 
-    header {
-      background: #0b1d33;
-      padding: 20px;
-      text-align: center;
-    }
+/* NAVBAR */
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#081a2d;
+  padding:16px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #16466b;
+}
 
-    header h1 {
-      color: #00d9ff;
-      font-size: 32px;
-    }
+.logo{
+  font-size:25px;
+  font-weight:bold;
+  color:#00d9ff;
+}
 
-    header p {
-      color: #ccc;
-      margin-top: 5px;
-    }
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:22px;
+  font-weight:bold;
+}
 
-    .hero {
-      min-height: 70vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 30px 20px;
-      background: linear-gradient(135deg, #07111f, #12365a);
-    }
+nav a:hover{
+  color:#00d9ff;
+}
 
-    .hero h2 {
-      font-size: 42px;
-      color: #00d9ff;
-      margin-bottom: 15px;
-    }
+/* HERO */
+.hero{
+  min-height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:50px 20px;
+  background:
+    radial-gradient(circle at top,#123d64,#06101d 65%);
+}
 
-    .hero p {
-      font-size: 20px;
-      color: #ddd;
-      max-width: 700px;
-      margin: auto;
-    }
+.hero h1{
+  font-size:55px;
+  color:#00d9ff;
+  margin-bottom:15px;
+}
 
-    .button {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 14px 28px;
-      background: #00d9ff;
-      color: #001018;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-    }
+.hero h2{
+  font-size:25px;
+  color:#ddd;
+  margin-bottom:20px;
+}
 
-    .section {
-      padding: 50px 20px;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
+.hero p{
+  max-width:700px;
+  margin:auto;
+  color:#bbb;
+  font-size:18px;
+}
 
-    .section h2 {
-      color: #00d9ff;
-      margin-bottom: 20px;
-      font-size: 30px;
-    }
+.buttons{
+  margin-top:30px;
+}
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin-top: 25px;
-    }
+.btn{
+  display:inline-block;
+  padding:14px 28px;
+  margin:8px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  background:#00d9ff;
+  color:#001018;
+}
 
-    .card {
-      background: #10243b;
-      padding: 25px;
-      border-radius: 12px;
-      border: 1px solid #1d496c;
-    }
+.btn:hover{
+  transform:scale(1.05);
+}
 
-    .card h3 {
-      color: #00d9ff;
-      margin-bottom: 10px;
-    }
+.btn-outline{
+  background:transparent;
+  color:#00d9ff;
+  border:2px solid #00d9ff;
+}
 
-    .contact {
-      background: #0b1d33;
-    }
+/* SECTIONS */
+section{
+  padding:80px 8%;
+}
 
-    .contact p {
-      margin: 10px 0;
-      font-size: 18px;
-    }
+.section-title{
+  text-align:center;
+  font-size:35px;
+  color:#00d9ff;
+  margin-bottom:40px;
+}
 
-    .contact a {
-      color: #00d9ff;
-      text-decoration: none;
-    }
+/* ABOUT */
+.about{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+  color:#ccc;
+  font-size:18px;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #050c15;
-      color: #aaa;
-    }
-  </style>
-</head>
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
 
-<body>
+.card{
+  background:#0d2339;
+  padding:30px 20px;
+  border-radius:15px;
+  text-align:center;
+  border:1px solid #17496d;
+  transition:.3s;
+}
 
-  <header>
-    <h1>Ritik Tyagi</h1>
-    <p>Electrical • VFD • Automation</p>
-  </header>
+.card:hover{
+  transform:translateY(-8px);
+  border-color:#00d9ff;
+}
 
-  <section class="hero">
-    <div>
-      <h2>Welcome to Ritik Tyagi Website</h2>
+.card .icon{
+  font-size:40px;
+  margin-bottom:15px;
+}
 
-      <p>
-        Electrical, VFD and Automation related work.
-        Professional and reliable electrical solutions.
-      </p>
+.card h3{
+  color:#00d9ff;
+  margin-bottom:12px;
+}
 
-      <a class="button" href="#contact">Contact Me</a>
-    </div>
-  </section>
+.card p{
+  color:#bbb;
+}
 
-  <section class="section">
-    <h2>My Services</h2>
+/* SKILLS */
+.skills{
+  max-width:850px;
+  margin:auto;
+}
 
-    <div class="services">
+.skill{
+  margin-bottom:22px;
+}
 
-      <div class="card">
-        <h3>⚡ Electrical Work</h3>
-        <p>Electrical installation, wiring and related work.</p>
-      </div>
+.skill-name{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:7px;
+}
 
-      <div class="card">
-        <h3>⚙️ VFD</h3>
-        <p>VFD installation, setup and basic troubleshooting.</p>
-      </div>
+.bar{
+  height:10px;
+  background:#1a3045;
+  border-radius:10px;
+  overflow:hidden;
+}
 
-      <div class="card">
-        <h3>🔧 Automation</h3>
-        <p>Industrial automation and control related solutions.</p>
-      </div>
+.progress{
+  height:100%;
+  background:#00d9ff;
+  border-radius:10px;
+}
 
-    </div>
-  </section>
+.p1{width:85%}
+.p2{width:75%}
+.p3{width:70%}
+.p4{width:65%}
+.p5{width:60%}
 
-  <section class="section contact" id="contact">
-    <h2>Contact Me</h2>
+/* PROJECTS */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:25px;
+}
 
-    <p>📍 Village Raghunathpur, Bijnor - 246732</p>
+.project{
+  background:#0d2339;
+  padding:25px;
+  border-radius:15px;
+  border:1px solid #17496d;
+}
 
-    <p>
-      📞 <a href="tel:6397298345">6397298345</a>
-    </p>
+.project h3{
+  color:#00d9ff;
+  margin-bottom:10px;
+}
 
-    <p>
-      ✉️ <a href="mailto:tyagikritik5@gmail.com">
-        tyagikritik5@gmail.com
-      </a>
-    </p>
+.project p{
+  color:#bbb;
+}
 
-    <a class="button" href="tel:6397298345">Call Me</a>
-  </section>
+/* CONTACT */
+.contact{
+  background:#081a2d;
+  text-align:center;
+}
 
-  <footer>
-    © 2026 Ritik Tyagi | Electrical VFD & Automation
-  </footer>
+.contact-box{
+  max-width:700px;
+  margin:auto;
+}
 
-</body>
-</html>
+.contact p{
+  margin:15px;
+  font-size:18px;
+  color:#ddd;
+}
+
+.contact a{
+  color:#00d9ff;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:25px;
+  background:#030911;
+  color:#888;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#25D366;
+  color:white;
+  padding:14px 18px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+  box-shadow:0 5px 20px #000;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+  header{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  nav a{
+    margin:0 7px;
+    font-size:13px;
+  }
+
+  .hero h1{
+    font-size:38px…
